@@ -1,0 +1,69 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# vs
+.vs/
+*.sdf
+#*.sln
+*.suo
+*.ipch
+*.ilk
+*.pdb
+*.map
+#*.vcxproj
+*.filters
+*.log
+*.pd_
+*.opensdf
+*.user
+Debug/
+Release/
+
+# vc6
+*.dsp
+*.dsw
+*.ncb
+*.opt
+*.plg
+*.clw
+*.aps
+*.log
+*.pch
+*.idb
+*.pdb
+*.ilk
+*.sbr
+*.bsc
+*.map
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Compressed Files
+*.zip
+*.7z
+*.rar
+*.gz
+*.bz2
+*.tar
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Database files
+*.mdb
+*.ldb
+*.db
