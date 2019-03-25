@@ -8,6 +8,10 @@
 
 #pragma once
 
+#ifndef max
+#define max(a, b) ((a) < (b) ? (b) : (a))
+#endif
+
 template <typename T> int BinTree<T>::updateHeight ( BinNodePosi(T) x ) //更新节点x高度
 { return x->height = 1 + max ( stature ( x->lc ), stature ( x->rc ) ); } //具体规则，因树而异
 

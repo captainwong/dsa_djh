@@ -8,6 +8,10 @@
 
 #pragma once
 
+#ifndef min
+#define min(a, b) ((a) < (b) ? (a) : (b))
+#endif
+
 template <typename Tv, typename Te> void Graph<Tv, Te>::bcc ( int s ) { //基于DFS的BCC分解算法
    reset(); int clock = 0; int v = s; Stack<int> S; //栈S用以记录已访问的顶点
    do
