@@ -1,4 +1,4 @@
-/******************************************************************************************
+Ôªø/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -9,25 +9,25 @@
 #pragma once
 
 /******************************************************************************************
- * ÕºGraph
+ * ÂõæGraph
  ******************************************************************************************/
-template <typename Tv, typename Te> //∂•µ„¿‡–Õ°¢±ﬂ¿‡–Õ
-void UniPrint::p ( GraphMatrix<Tv, Te>& s ) { //“˝”√
+template <typename Tv, typename Te> //È°∂ÁÇπÁ±ªÂûã„ÄÅËæπÁ±ªÂûã
+void UniPrint::p ( GraphMatrix<Tv, Te>& s ) { //ÂºïÁî®
    int inD = 0; for ( int i = 0; i < s.n; i++ ) inD += s.inDegree ( i );
    int outD = 0; for ( int i = 0; i < s.n; i++ ) outD += s.outDegree ( i );
-   printf ( "%s[%d]*(%d, %d):\n", typeid ( s ).name(), &s, s.n, s.e ); //ª˘±æ–≈œ¢
-// ±ÍÃ‚––
+   printf ( "%s[%d]*(%d, %d):\n", typeid ( s ).name(), &s, s.n, s.e ); //Âü∫Êú¨‰ø°ÊÅØ
+// Ê†áÈ¢òË°å
    print ( s.n ); printf ( " " ); print ( inD ); printf ( "|" );
    for ( int i = 0; i < s.n; i++ ) { print ( s.vertex ( i ) ); printf ( "[" ); print ( s.status ( i ) ); printf ( "] " ); }
    printf ( "\n" );
-// ±ÍÃ‚––£®–¯£©
+// Ê†áÈ¢òË°åÔºàÁª≠Ôºâ
    print ( outD ); printf ( " " ); print ( s.e ); printf ( "|" );
    for ( int i = 0; i < s.n; i++ ) { print ( s.inDegree ( i ) ); printf ( " " ); }
    printf ( "| dTime fTime Parent Weight\n" );
-// ÀÆ∆Ω∑÷∏Ùœﬂ
+// Ê∞¥Âπ≥ÂàÜÈöîÁ∫ø
    printf ( "-----------+" ); for ( int i = 0; i < s.n; i++ ) printf ( "------" );
    printf ( "+----------------------------\n" );
-// ÷–– ‰≥ˆ∏˜∂•µ„
+// ÈÄêË°åËæìÂá∫ÂêÑÈ°∂ÁÇπ
    for ( int i = 0; i < s.n; i++ ) {
       print ( s.vertex ( i ) ); printf ( "[" ); print ( s.status ( i ) ); printf ( "] " ); print ( s.outDegree ( i ) ); printf ( "|" );
       for ( int j = 0; j < s.n; j++ )
