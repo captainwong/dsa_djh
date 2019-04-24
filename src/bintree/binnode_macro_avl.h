@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,8 +8,8 @@
 
 #pragma once
 
-/*DSA*/#define HeightUpdated(x) /*¸ß¶È¸üĞÂ³£¹æÌõ¼ş*/ \
+/*DSA*/#define HeightUpdated(x) /*é«˜åº¦æ›´æ–°å¸¸è§„æ¡ä»¶*/ \
 /*DSA*/        ( (x).height == 1 + max( stature( (x).lc ), stature( (x).rc ) ) )
-#define Balanced(x) ( stature( (x).lc ) == stature( (x).rc ) ) //ÀíÏëÆ½ºâÌõ¼ş
-#define BalFac(x) ( stature( (x).lc ) - stature( (x).rc ) ) //Æ½ºâÒò×Ó
-#define AvlBalanced(x) ( ( -2 < BalFac(x) ) && ( BalFac(x) < 2 ) ) //AVLÆ½ºâÌõ¼ş
+#define Balanced(x) ( stature( (x).lc ) == stature( (x).rc ) ) //ç†æƒ³å¹³è¡¡æ¡ä»¶
+#define BalFac(x) ( stature( (x).lc ) - stature( (x).rc ) ) //å¹³è¡¡å› å­
+#define AvlBalanced(x) ( ( -2 < BalFac(x) ) && ( BalFac(x) < 2 ) ) //AVLå¹³è¡¡æ¡ä»¶

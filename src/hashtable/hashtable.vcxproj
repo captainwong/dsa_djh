@@ -105,7 +105,6 @@
     <ClInclude Include="HashTable_get.h" />
     <ClInclude Include="HashTable_hashcode.h" />
     <ClInclude Include="HashTable_Implementation.h" />
-    <ClInclude Include="HashTable_probe.h" />
     <ClInclude Include="Hashtable_probe4Free.h" />
     <ClInclude Include="Hashtable_probe4Hit.h" />
     <ClInclude Include="HashTable_put.h" />

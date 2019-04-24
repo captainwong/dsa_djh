@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,12 +8,12 @@
 
 #pragma once
 
-template <typename T, typename VST> //ÔªËØÀàĞÍ¡¢²Ù×÷Æ÷
-void travPre_I1 ( BinNodePosi(T) x, VST& visit ) { //¶ş²æÊ÷ÏÈĞò±éÀúËã·¨£¨µü´ú°æ#1£©
-   Stack<BinNodePosi(T)> S; //¸¨ÖúÕ»
-   if ( x ) S.push ( x ); //¸ù½ÚµãÈëÕ»
-   while ( !S.empty() ) { //ÔÚÕ»±ä¿ÕÖ®Ç°·´¸´Ñ­»·
-      x = S.pop(); visit ( x->data ); //µ¯³ö²¢·ÃÎÊµ±Ç°½Úµã£¬Æä·Ç¿Õº¢×ÓµÄÈëÕ»´ÎĞòÎªÏÈÓÒºó×ó
+template <typename T, typename VST> //å…ƒç´ ç±»å‹ã€æ“ä½œå™¨
+void travPre_I1 ( BinNodePosi(T) x, VST& visit ) { //äºŒå‰æ ‘å…ˆåºéå†ç®—æ³•ï¼ˆè¿­ä»£ç‰ˆ#1ï¼‰
+   Stack<BinNodePosi(T)> S; //è¾…åŠ©æ ˆ
+   if ( x ) S.push ( x ); //æ ¹èŠ‚ç‚¹å…¥æ ˆ
+   while ( !S.empty() ) { //åœ¨æ ˆå˜ç©ºä¹‹å‰åå¤å¾ªç¯
+      x = S.pop(); visit ( x->data ); //å¼¹å‡ºå¹¶è®¿é—®å½“å‰èŠ‚ç‚¹ï¼Œå…¶éç©ºå­©å­çš„å…¥æ ˆæ¬¡åºä¸ºå…ˆå³åå·¦
       if ( HasRChild ( *x ) ) S.push ( x->rc ); if ( HasLChild ( *x ) ) S.push ( x->lc );
    }
 }

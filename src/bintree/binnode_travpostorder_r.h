@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,8 +8,8 @@
 
 #pragma once
 
-template <typename T, typename VST> //ÔªËØÀàÐÍ¡¢²Ù×÷Æ÷
-void travPost_R ( BinNodePosi(T) x, VST& visit ) { //¶þ²æÊ÷ºóÐò±éÀúËã·¨£¨µÝ¹é°æ£©
+template <typename T, typename VST> //å…ƒç´ ç±»åž‹ã€æ“ä½œå™¨
+void travPost_R ( BinNodePosi(T) x, VST& visit ) { //äºŒå‰æ ‘åŽåºéåŽ†ç®—æ³•ï¼ˆé€’å½’ç‰ˆï¼‰
    if ( !x ) return;
    travPost_R ( x->lc, visit );
    travPost_R ( x->rc, visit );

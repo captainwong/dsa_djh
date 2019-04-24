@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -12,8 +12,8 @@
 #define max(a, b) ((a) < (b) ? (b) : (a))
 #endif
 
-template <typename T> int BinTree<T>::updateHeight ( BinNodePosi(T) x ) //¸üĞÂ½Úµãx¸ß¶È
-{ return x->height = 1 + max ( stature ( x->lc ), stature ( x->rc ) ); } //¾ßÌå¹æÔò£¬ÒòÊ÷¶øÒì
+template <typename T> int BinTree<T>::updateHeight ( BinNodePosi(T) x ) //æ›´æ–°èŠ‚ç‚¹xé«˜åº¦
+{ return x->height = 1 + max ( stature ( x->lc ), stature ( x->rc ) ); } //å…·ä½“è§„åˆ™ï¼Œå› æ ‘è€Œå¼‚
 
-template <typename T> void BinTree<T>::updateHeightAbove ( BinNodePosi(T) x ) //¸üĞÂ¸ß¶È
-{ while ( x ) { updateHeight ( x ); x = x->parent; } } //´Óx³ö·¢£¬¸²¸ÇÀú´ú×æÏÈ¡£¿ÉÓÅ»¯
+template <typename T> void BinTree<T>::updateHeightAbove ( BinNodePosi(T) x ) //æ›´æ–°é«˜åº¦
+{ while ( x ) { updateHeight ( x ); x = x->parent; } } //ä»xå‡ºå‘ï¼Œè¦†ç›–å†ä»£ç¥–å…ˆã€‚å¯ä¼˜åŒ–

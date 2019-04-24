@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,18 +8,18 @@
 
 #pragma once
 
-typedef enum { AVAILABLE, ROUTE, BACKTRACKED, WALL } Status; //ÃÔ¹¬µ¥Ôª×´Ì¬
-//Ô­Ê¼¿ÉÓÃµÄ¡¢ÔÚµ±Ç°Â·¾¶ÉÏµÄ¡¢ËùÓĞ·½Ïò¾ù³¢ÊÔÊ§°Üºó»ØËİ¹ıµÄ¡¢²»¿ÉÊ¹ÓÃµÄ£¨Ç½£©
+typedef enum { AVAILABLE, ROUTE, BACKTRACKED, WALL } Status; //è¿·å®«å•å…ƒçŠ¶æ€
+//åŸå§‹å¯ç”¨çš„ã€åœ¨å½“å‰è·¯å¾„ä¸Šçš„ã€æ‰€æœ‰æ–¹å‘å‡å°è¯•å¤±è´¥åå›æº¯è¿‡çš„ã€ä¸å¯ä½¿ç”¨çš„ï¼ˆå¢™ï¼‰
 
-typedef enum { UNKNOWN, EAST, SOUTH, WEST, NORTH, NO_WAY } ESWN; //µ¥ÔªµÄÏà¶ÔÁÚ½Ó·½Ïò
-//Î´¶¨¡¢¶«¡¢ÄÏ¡¢Î÷¡¢±±¡¢ÎŞÂ·¿ÉÍ¨
+typedef enum { UNKNOWN, EAST, SOUTH, WEST, NORTH, NO_WAY } ESWN; //å•å…ƒçš„ç›¸å¯¹é‚»æ¥æ–¹å‘
+//æœªå®šã€ä¸œã€å—ã€è¥¿ã€åŒ—ã€æ— è·¯å¯é€š
 
-inline ESWN nextESWN ( ESWN eswn ) { return ESWN ( eswn + 1 ); } //ÒÀ´Î×ªÖÁÏÂÒ»ÁÚ½Ó·½Ïò
+inline ESWN nextESWN ( ESWN eswn ) { return ESWN ( eswn + 1 ); } //ä¾æ¬¡è½¬è‡³ä¸‹ä¸€é‚»æ¥æ–¹å‘
 
-struct Cell { //ÃÔ¹¬¸ñµã
-   int x, y; Status status; //x×ø±ê¡¢y×ø±ê¡¢ÀàĞÍ
-   ESWN incoming, outgoing; //½øÈë¡¢×ß³ö·½Ïò
+struct Cell { //è¿·å®«æ ¼ç‚¹
+   int x, y; Status status; //xåæ ‡ã€yåæ ‡ã€ç±»å‹
+   ESWN incoming, outgoing; //è¿›å…¥ã€èµ°å‡ºæ–¹å‘
 };
 
-#define LABY_MAX 24 //×î´óÃÔ¹¬³ß´ç
-Cell laby[LABY_MAX][LABY_MAX]; //ÃÔ¹¬
+#define LABY_MAX 24 //æœ€å¤§è¿·å®«å°ºå¯¸
+Cell laby[LABY_MAX][LABY_MAX]; //è¿·å®«

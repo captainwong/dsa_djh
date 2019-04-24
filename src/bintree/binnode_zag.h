@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,7 +8,7 @@
 
 #pragma once
 
-template <typename T> BinNodePosi(T) BinNode<T>::zag() { //ÄæÊ±ÕëÐý×ª
+template <typename T> BinNodePosi(T) BinNode<T>::zag() { //é€†æ—¶é’ˆæ—‹è½¬
    BinNodePosi(T) rChild = rc;
    rChild->parent = this->parent;
    if ( rChild->parent )

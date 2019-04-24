@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,12 +8,12 @@
 
 #pragma once
 
-inline Cell* neighbor ( Cell* cell ) { //²éÑ¯µ±Ç°Î»ÖÃµÄÏàÁÚ¸ñµã
+inline Cell* neighbor ( Cell* cell ) { //æŸ¥è¯¢å½“å‰ä½ç½®çš„ç›¸é‚»æ ¼ç‚¹
    switch ( cell->outgoing ) {
-      case EAST  : return cell + LABY_MAX; //Ïò¶«
-      case SOUTH : return cell + 1;        //ÏòÄÏ
-      case WEST  : return cell - LABY_MAX; //ÏòÎ÷
-      case NORTH : return cell - 1;        //Ïò±±
+      case EAST  : return cell + LABY_MAX; //å‘ä¸œ
+      case SOUTH : return cell + 1;        //å‘å—
+      case WEST  : return cell - LABY_MAX; //å‘è¥¿
+      case NORTH : return cell - 1;        //å‘åŒ—
       default    : exit ( -1 );
    }
 }

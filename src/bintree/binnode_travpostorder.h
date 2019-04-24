@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,13 +8,13 @@
 
 #pragma once
 
-/*DSA*/#include "../stack/Stack.h" //ÒıÈëÕ»Ä£°åÀà
+/*DSA*/#include "../stack/Stack.h" //å¼•å…¥æ ˆæ¨¡æ¿ç±»
 /*DSA*/#include "BinNode_TravPostorder_R.h"
 /*DSA*/#include "BinNode_TravPostorder_I.h"
-template <typename T> template <typename VST> //ÔªËØÀàĞÍ¡¢²Ù×÷Æ÷
-void BinNode<T>::travPost ( VST& visit ) { //¶ş²æÊ÷ºóĞò±éÀúËã·¨Í³Ò»Èë¿Ú
-   switch ( rand() % 2 ) { //´Ë´¦ÔİËæ»úÑ¡ÔñÒÔ×ö²âÊÔ£¬¹²Á½ÖÖÑ¡Ôñ
-      case 1: travPost_I ( this, visit ); break; //µü´ú°æ
-      default: travPost_R ( this, visit ); break; //µİ¹é°æ
+template <typename T> template <typename VST> //å…ƒç´ ç±»å‹ã€æ“ä½œå™¨
+void BinNode<T>::travPost ( VST& visit ) { //äºŒå‰æ ‘ååºéå†ç®—æ³•ç»Ÿä¸€å…¥å£
+   switch ( rand() % 2 ) { //æ­¤å¤„æš‚éšæœºé€‰æ‹©ä»¥åšæµ‹è¯•ï¼Œå…±ä¸¤ç§é€‰æ‹©
+      case 1: travPost_I ( this, visit ); break; //è¿­ä»£ç‰ˆ
+      default: travPost_R ( this, visit ); break; //é€’å½’ç‰ˆ
    }
 }

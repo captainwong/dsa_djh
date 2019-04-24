@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,9 +8,9 @@
 
 #pragma once
 
-#define IsBlack(p) ( ! (p) || ( RB_BLACK == (p)->color ) ) //Íâ²¿½ÚµãÒ²ÊÓ×÷ºÚ½Úµã
-#define IsRed(p) ( ! IsBlack(p) ) //·ÇºÚ¼´ºì
-#define BlackHeightUpdated(x) ( /*RedBlack¸ß¶È¸üĞÂÌõ¼ş*/ \
+#define IsBlack(p) ( ! (p) || ( RB_BLACK == (p)->color ) ) //å¤–éƒ¨èŠ‚ç‚¹ä¹Ÿè§†ä½œé»‘èŠ‚ç‚¹
+#define IsRed(p) ( ! IsBlack(p) ) //éé»‘å³çº¢
+#define BlackHeightUpdated(x) ( /*RedBlacké«˜åº¦æ›´æ–°æ¡ä»¶*/ \
    ( stature( (x).lc ) == stature( (x).rc ) ) && \
    ( (x).height == ( IsRed(& x) ? stature( (x).lc ) : stature( (x).lc ) + 1 ) ) \
 )

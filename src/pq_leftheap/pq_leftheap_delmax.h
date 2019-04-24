@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,11 +8,11 @@
 
 #pragma once
 
-template <typename T> T PQ_LeftHeap<T>::delMax() { //»ùÓÚºÏ²¢²Ù×÷µÄ´ÊÌõÉ¾³ıËã·¨£¨µ±Ç°¶ÓÁĞ·Ç¿Õ£©
-   BinNodePosi(T) lHeap = _root->lc; //×ó×Ó¶Ñ
-   BinNodePosi(T) rHeap = _root->rc; //ÓÒ×Ó¶Ñ
-   T e = _root->data; delete _root; _size--; //É¾³ı¸ù½Úµã
-   _root = merge ( lHeap, rHeap ); //Ô­×óÓÒ×Ó¶ÑºÏ²¢
-//   if ( _root ) _root->parent = NULL; //Èô¶Ñ·Ç¿Õ£¬»¹ĞèÏàÓ¦ÉèÖÃ¸¸×ÓÁ´½Ó
-   return e; //·µ»ØÔ­¸ù½ÚµãµÄÊı¾İÏî
+template <typename T> T PQ_LeftHeap<T>::delMax() { //åŸºäºåˆå¹¶æ“ä½œçš„è¯æ¡åˆ é™¤ç®—æ³•ï¼ˆå½“å‰é˜Ÿåˆ—éç©ºï¼‰
+   BinNodePosi(T) lHeap = _root->lc; //å·¦å­å †
+   BinNodePosi(T) rHeap = _root->rc; //å³å­å †
+   T e = _root->data; delete _root; _size--; //åˆ é™¤æ ¹èŠ‚ç‚¹
+   _root = merge ( lHeap, rHeap ); //åŸå·¦å³å­å †åˆå¹¶
+//   if ( _root ) _root->parent = NULL; //è‹¥å †éç©ºï¼Œè¿˜éœ€ç›¸åº”è®¾ç½®çˆ¶å­é“¾æ¥
+   return e; //è¿”å›åŸæ ¹èŠ‚ç‚¹çš„æ•°æ®é¡¹
 }

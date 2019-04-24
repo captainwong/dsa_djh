@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,18 +8,18 @@
 
 #pragma once
 
-template <typename T> //´Óµ±Ç°½Úµã³ö·¢£¬ÑØ×ó·ÖÖ§²»¶ÏÉîÈë£¬Ö±ÖÁÃ»ÓĞ×ó·ÖÖ§µÄ½Úµã
+template <typename T> //ä»å½“å‰èŠ‚ç‚¹å‡ºå‘ï¼Œæ²¿å·¦åˆ†æ”¯ä¸æ–­æ·±å…¥ï¼Œç›´è‡³æ²¡æœ‰å·¦åˆ†æ”¯çš„èŠ‚ç‚¹
 static void goAlongLeftBranch ( BinNodePosi(T) x, Stack<BinNodePosi(T)>& S ) {
-   while ( x ) { S.push ( x ); x = x->lc; } //µ±Ç°½ÚµãÈëÕ»ºóËæ¼´Ïò×ó²à·ÖÖ§ÉîÈë£¬µü´úÖ±µ½ÎŞ×óº¢×Ó
+   while ( x ) { S.push ( x ); x = x->lc; } //å½“å‰èŠ‚ç‚¹å…¥æ ˆåéšå³å‘å·¦ä¾§åˆ†æ”¯æ·±å…¥ï¼Œè¿­ä»£ç›´åˆ°æ— å·¦å­©å­
 }
 
-template <typename T, typename VST> //ÔªËØÀàĞÍ¡¢²Ù×÷Æ÷
-void travIn_I1 ( BinNodePosi(T) x, VST& visit ) { //¶ş²æÊ÷ÖĞĞò±éÀúËã·¨£¨µü´ú°æ#1£©
-   Stack<BinNodePosi(T)> S; //¸¨ÖúÕ»
+template <typename T, typename VST> //å…ƒç´ ç±»å‹ã€æ“ä½œå™¨
+void travIn_I1 ( BinNodePosi(T) x, VST& visit ) { //äºŒå‰æ ‘ä¸­åºéå†ç®—æ³•ï¼ˆè¿­ä»£ç‰ˆ#1ï¼‰
+   Stack<BinNodePosi(T)> S; //è¾…åŠ©æ ˆ
    while ( true ) {
-      goAlongLeftBranch ( x, S ); //´Óµ±Ç°½Úµã³ö·¢£¬ÖğÅúÈëÕ»
-      if ( S.empty() ) break; //Ö±ÖÁËùÓĞ½Úµã´¦ÀíÍê±Ï
-      x = S.pop(); visit ( x->data ); //µ¯³öÕ»¶¥½Úµã²¢·ÃÎÊÖ®
-      x = x->rc; //×ªÏòÓÒ×ÓÊ÷
+      goAlongLeftBranch ( x, S ); //ä»å½“å‰èŠ‚ç‚¹å‡ºå‘ï¼Œé€æ‰¹å…¥æ ˆ
+      if ( S.empty() ) break; //ç›´è‡³æ‰€æœ‰èŠ‚ç‚¹å¤„ç†å®Œæ¯•
+      x = S.pop(); visit ( x->data ); //å¼¹å‡ºæ ˆé¡¶èŠ‚ç‚¹å¹¶è®¿é—®ä¹‹
+      x = x->rc; //è½¬å‘å³å­æ ‘
    }
 }

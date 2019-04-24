@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,9 +8,9 @@
 
 #pragma once
 
-template <typename K, typename V> Hashtable<K, V>::~Hashtable() { //Îö¹¹Ç°ÊÍ·ÅÍ°Êı×é¼°·Ç¿Õ´ÊÌõ
-   for ( int i = 0; i < M; i++ ) //ÖğÒ»¼ì²é¸÷Í°
-      if ( ht[i] ) release ( ht[i] ); //ÊÍ·Å·Ç¿ÕµÄÍ°
-   release ( ht ); //ÊÍ·ÅÍ°Êı×é
-   release ( lazyRemoval ); //ÊÍ·ÅÀÁ¶èÉ¾³ı±ê¼Ç
+template <typename K, typename V> Hashtable<K, V>::~Hashtable() { //ææ„å‰é‡Šæ”¾æ¡¶æ•°ç»„åŠéç©ºè¯æ¡
+   for ( int i = 0; i < M; i++ ) //é€ä¸€æ£€æŸ¥å„æ¡¶
+      if ( ht[i] ) release ( ht[i] ); //é‡Šæ”¾éç©ºçš„æ¡¶
+   release ( ht ); //é‡Šæ”¾æ¡¶æ•°ç»„
+   release ( lazyRemoval ); //é‡Šæ”¾æ‡’æƒ°åˆ é™¤æ ‡è®°
 }

@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -9,10 +9,10 @@
 #pragma once
 
 template <typename T> BinNodePosi(T) BinTree<T>::insertAsRoot ( T const& e )
-{ _size = 1; return _root = new BinNode<T> ( e ); } //½«eµ±×÷¸ù½Úµã²åÈë¿ÕµÄ¶ş²æÊ÷
+{ _size = 1; return _root = new BinNode<T> ( e ); } //å°†eå½“ä½œæ ¹èŠ‚ç‚¹æ’å…¥ç©ºçš„äºŒå‰æ ‘
 
 template <typename T> BinNodePosi(T) BinTree<T>::insertAsLC ( BinNodePosi(T) x, T const& e )
-{ _size++; x->insertAsLC ( e ); updateHeightAbove ( x ); return x->lc; } //e²åÈëÎªxµÄ×óº¢×Ó
+{ _size++; x->insertAsLC ( e ); updateHeightAbove ( x ); return x->lc; } //eæ’å…¥ä¸ºxçš„å·¦å­©å­
 
 template <typename T> BinNodePosi(T) BinTree<T>::insertAsRC ( BinNodePosi(T) x, T const& e )
-{ _size++; x->insertAsRC ( e ); updateHeightAbove ( x ); return x->rc; } //e²åÈëÎªxµÄÓÒº¢×Ó
+{ _size++; x->insertAsRC ( e ); updateHeightAbove ( x ); return x->rc; } //eæ’å…¥ä¸ºxçš„å³å­©å­

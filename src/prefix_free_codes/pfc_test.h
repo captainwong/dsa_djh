@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -18,8 +18,8 @@ using namespace std;
 
 #include "PFC.h"
 
-extern PFCForest* initForest(); //´´½¨±àÂëÊ÷É­ÁÖ
-extern PFCTree* generateTree ( PFCForest* ); //¹¹Ôì±àÂëÊ÷
-extern PFCTable* generateTable ( PFCTree* ); //ÓÉ±àÂëÊ÷×ª»»Îª±àÂë±í
-extern int encode ( PFCTable*, Bitmap&, char* ); //Ã÷ÎÄµÄ±àÂë£¬·µ»Ø±àÂë³¤¶È
-extern void decode ( PFCTree*, Bitmap&, int ); //¶ş½øÖÆ´®µÄ½âÂë
+extern PFCForest* initForest(); //åˆ›å»ºç¼–ç æ ‘æ£®æ—
+extern PFCTree* generateTree ( PFCForest* ); //æ„é€ ç¼–ç æ ‘
+extern PFCTable* generateTable ( PFCTree* ); //ç”±ç¼–ç æ ‘è½¬æ¢ä¸ºç¼–ç è¡¨
+extern int encode ( PFCTable*, Bitmap&, char* ); //æ˜æ–‡çš„ç¼–ç ï¼Œè¿”å›ç¼–ç é•¿åº¦
+extern void decode ( PFCTree*, Bitmap&, int ); //äºŒè¿›åˆ¶ä¸²çš„è§£ç 

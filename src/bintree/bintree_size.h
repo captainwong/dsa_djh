@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,6 +8,6 @@
 
 #pragma once
 
-template <typename T> //Í³¼Æ¶ş²æÊ÷×ÓÊ÷¹æÄ£
-int BinTree<T>::size ( BinNodePosi(T) x ) //assert: xÎª¶ş²æÊ÷ÖĞµÄºÏ·¨Î»ÖÃ
+template <typename T> //ç»Ÿè®¡äºŒå‰æ ‘å­æ ‘è§„æ¨¡
+int BinTree<T>::size ( BinNodePosi(T) x ) //assert: xä¸ºäºŒå‰æ ‘ä¸­çš„åˆæ³•ä½ç½®
 {  return x ? size ( x->lc ) + size ( x->RChild ) : 0;  }

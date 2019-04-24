@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,5 +8,5 @@
 
 #pragma once
 
-template <typename K, typename V> V* Hashtable<K, V>::get ( K k ) //É¢ÁĞ±í´ÊÌõ²éÕÒËã·¨
-{  int r = probe4Hit ( k ); return ht[r] ? & ( ht[r]->value ) : NULL;  } //½ûÖ¹´ÊÌõµÄkeyÖµÀ×Í¬
+template <typename K, typename V> V* Hashtable<K, V>::get ( K k ) //æ•£åˆ—è¡¨è¯æ¡æŸ¥æ‰¾ç®—æ³•
+{  int r = probe4Hit ( k ); return ht[r] ? & ( ht[r]->value ) : NULL;  } //ç¦æ­¢è¯æ¡çš„keyå€¼é›·åŒ

@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,7 +8,7 @@
 
 #pragma once
 
-void readLaby ( char* labyFile ) { //¶ÁÈëÃÔ¹¬
+void readLaby ( char* labyFile ) { //è¯»å…¥è¿·å®«
    FILE* fp;
    if ( ! ( fp = fopen ( labyFile, "r" ) ) )
       { cout << "can't open " << labyFile << endl; exit ( -1 ); }
