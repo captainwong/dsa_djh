@@ -1,4 +1,4 @@
-/******************************************************************************************
+ï»¿/******************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
@@ -8,5 +8,5 @@
 
 #pragma once
 
-/*DSA*///typedef BinTree<HuffChar> HuffTree; //HuffmanÊ÷£¬ÓÉBinTreeÅÉÉú£¬½ÚµãÀàĞÍÎªHuffChar
-#define HuffTree BinTree<HuffChar> //HuffmanÊ÷£¬ÓÉBinTreeÅÉÉú£¬½ÚµãÀàĞÍÎªHuffChar
+/*DSA*///typedef BinTree<HuffChar> HuffTree; //Huffmanæ ‘ï¼Œç”±BinTreeæ´¾ç”Ÿï¼ŒèŠ‚ç‚¹ç±»å‹ä¸ºHuffChar
+#define HuffTree BinTree<HuffChar> //Huffmanæ ‘ï¼Œç”±BinTreeæ´¾ç”Ÿï¼ŒèŠ‚ç‚¹ç±»å‹ä¸ºHuffChar
