@@ -102,7 +102,6 @@
   <ItemGroup>
     <ClInclude Include="..\huffman\HuffChar.h" />
     <ClInclude Include="..\huffman\HuffCode.h" />
-    <ClInclude Include="..\huffman\HuffComp.h" />
     <ClInclude Include="..\huffman\Huffman_Forest_PQ_List.h" />
     <ClInclude Include="..\huffman\Huffman_PQ.h" />
     <ClInclude Include="..\huffman\Huffman_PQ_test.h" />
